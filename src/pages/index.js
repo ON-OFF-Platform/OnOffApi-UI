@@ -1,7 +1,9 @@
 import HomePage from "./HomePage/HomePage";
+import LoginPage from "./LoginPage";
 
 const PageRoutes = {
-    HomePage
+    HomePage,
+    LoginPage
 }
 
 export default PageRoutes;

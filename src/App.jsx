@@ -1,5 +1,4 @@
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { useState } from 'react';
 import { PATH } from '@/utils/path';
 import UserLayout from '@/layouts/UserLayout';
 import PageRoutes from '@/pages';
@@ -11,8 +10,10 @@ function App() {
   return (
     <div className='app'>
       <Routes>
-        <Route path='/' element={<UserLayout/>}>
-          <Route index element={<PageRoutes.HomePage/>}/>
+        <Route index element={<PageRoutes.HomePage/>}/>
+
+        <Route path='/tx' element={<UserLayout/>}>
+          <Route PATH={PATH.LOGIN} element={<PageRoutes.LoginPage/>}/>
         </Route>
       </Routes>
     </div>

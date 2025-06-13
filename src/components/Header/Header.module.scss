@@ -1,0 +1,23 @@
+.header{
+    margin: 0 auto;
+    width: 1080px;
+    height: 80px;
+    border-bottom: 1px solid #38383838;
+}
+
+.logo {
+    margin: 0 20px;
+    height: 80px;
+    line-height: 100px;
+
+    img {
+        width: 150px;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+    .header{
+        width: 100%;
+    }
+}
