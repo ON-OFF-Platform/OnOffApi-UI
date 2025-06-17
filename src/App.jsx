@@ -11,6 +11,7 @@ function App() {
     <div className='app'>
       <Routes>
         <Route index element={<PageRoutes.HomePage/>}/>
+        <Route path='/login' element={<PageRoutes.LoginPage/>}/>
 
         <Route path='/tx' element={<UserLayout/>}>
           <Route PATH={PATH.LOGIN} element={<PageRoutes.LoginPage/>}/>

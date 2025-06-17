@@ -1,14 +1,15 @@
 .main {
-    width: 1080px;
+    width: 1024px;
     margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;  
 }
 
 .logo {
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     text-align: center;
 
     img {
@@ -18,4 +19,55 @@
 
 .btn {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.guest{
+    margin-top: 30px;
+    width: 230px;
+    text-align: center;
+
+    .guestBtn{
+        font-size: 0.8em;
+        cursor: pointer;
+        text-decoration: underline;
+
+        &:hover{
+            color: var(--color-main);
+        }
+    }
+
+    .entryGuide{
+        font-size: 0.6em;
+        color: var(--font-guide);
+        margin-top: 10px;
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+    .main{
+        width: 100%;
+    }
+
+    .social{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 250px) {
+    .logo{
+        img {
+            width: 80%;
+        }
+    }
+
+    .guest{
+        width: 80%;
+    }
 }
