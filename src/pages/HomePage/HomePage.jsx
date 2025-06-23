@@ -12,7 +12,7 @@ const HomePage = () => {
             <div className={styles.logo}><img src={logo} alt='logo'/></div>
             <div className={styles.btn}>
                 <div className="btn1" onClick={() => navigation(PATH.LOGIN)}>LOGIN</div>
-                <div className="btn2">JOIN</div>
+                <div className="btn2" onClick={() => navigation(PATH.JOIN)}>JOIN</div>
             </div>
             <div className={styles.guest}>
                 <div className={styles.guestBtn}>GUEST</div>

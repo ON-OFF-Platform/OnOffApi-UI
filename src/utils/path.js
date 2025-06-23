@@ -2,7 +2,8 @@
 
 export const PATH = {
     HOME: '/',
-    LOGIN: '/login'
+    LOGIN: '/login',
+    JOIN: '/join'
 }
 
 export const deployHostName = import.meta.env.VITE_DEPLOY_HOSTNAME || 'http://localhost:5173';

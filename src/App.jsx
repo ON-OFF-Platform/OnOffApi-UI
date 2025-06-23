@@ -12,6 +12,7 @@ function App() {
       <Routes>
         <Route index element={<PageRoutes.HomePage/>}/>
         <Route path='/login' element={<PageRoutes.LoginPage/>}/>
+        <Route path='/join' element={<PageRoutes.JoinPage/>}/>
 
         <Route path='/tx' element={<UserLayout/>}>
           <Route PATH={PATH.LOGIN} element={<PageRoutes.LoginPage/>}/>
