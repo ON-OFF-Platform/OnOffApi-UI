@@ -1,0 +1,162 @@
+.main{
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+}
+
+
+.logo {
+    width: 100%;
+    margin: 0 auto 50px auto;
+    text-align: center;
+    cursor: pointer;
+
+    img {
+        width: 180px;
+    }
+}
+
+.btn {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    .loginTitle{
+        font-size: 0.8em;
+        color: var(--font-bg);
+    }
+}
+
+
+// input 전체 Div
+.inputBox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.idBox, .pwBox{
+    width: 280px;
+}
+
+
+// 라벨
+.label, .label2{
+    font-size: 0.8em;
+    position: absolute;
+    color: var(--font-bg);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.label{
+    transform: translate(30%, 95%);
+}
+
+.label2{
+    transform: translate(20%, 90%);
+}
+
+// focuse 라벨
+.focused, .focused2 {
+    background: linear-gradient(to bottom,  var(--color-white) 50%, var(--color-bg) 50%);
+    padding: 0 5px;
+    font-size: 0.75rem;
+    color: var(--color-main);
+}
+
+.focused{
+    transform: translate(10%, -50%);
+}
+
+.focused2 {
+    transform: translate(5%, -50%);
+}
+
+.error{
+    text-align: left;
+    margin: 10px 0;
+    font-size: 0.5em;
+    color: var(--font-red);
+}
+
+// 로그인 버튼
+.loginBtn{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+// 소셜 로그인 버튼
+.social{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .kakaoBtn, .googleBtn{
+        width: 150px;
+        cursor: pointer;
+
+        img{
+            width: 150px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+     .main{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+
+  .logo img {
+    width: 140px;
+  }
+
+  .inputBox{
+    width: 80%;
+
+    .idBox, .pwBox {
+        width: 100%;
+    }
+
+  }
+
+  .loginBtn {
+    width: 83%;
+  }
+}
+
+@media (max-width: 360px) {
+    .social{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .kakaoBtn, .googleBtn {
+            img {
+                width: 85%;
+            }
+        }
+    }
+}
